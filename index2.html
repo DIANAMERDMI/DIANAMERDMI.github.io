@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes anim{
+            0%{transform: rotate(90deg);}
+            100%{transform: rotate(0);}
+        }
+        img{
+            width: 100px;
+            animation: anim 1s;
+        }
+        #table{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <div onclick="show()">
+        <img src="карта.jpg">
+    </div>
+    <div id='table'></div>
+    <script>
+
+        let card_name=['девятка.ч.jpg','туз.png','кч.png','вч.jpg','6ч.jpg','7ч.png','8ч.jpg','10ч.gif']
+        let table = document.getElementById('table')
+      function show(){
+      let card = document.createElement('div');
+      let card_file_name = '<img scr="' + card_name[2] + '">';
+      card.innerHTML = '<img src="дч.jpg">';
+      table.append(card);    
+}
+    </script>
+</body>
+</html>
